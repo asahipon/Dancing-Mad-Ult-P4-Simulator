@@ -858,7 +858,7 @@ class SimulatorBase(ShowBase):
 
         SPREAD_EARLY -> (3, 1)
             「早散会（ビーム受けたまま）」をエコー表示 + 頭上1マーク
-        SPREAD_LATE -> (3, 2)
+        SPREAD_LATE -> (4, 2)
             「遅散会（東西）」をエコー表示 + 頭上2マーク
         STACK -> 何もしない
         """
@@ -873,7 +873,7 @@ class SimulatorBase(ShowBase):
         if result == "SPREAD_EARLY":
             self.execute_macro(3, 1)
         elif result == "SPREAD_LATE":
-            self.execute_macro(3, 2)
+            self.execute_macro(4, 2)
 
     def _timeline_0221_accel_result_echo(self):
         """
@@ -1094,7 +1094,7 @@ class SimulatorBase(ShowBase):
         かつ water_light_gc=1 のとき、water_light_result に応じて
         4行目の散会マクロを自動実行する。
 
-        SPREAD_EARLY -> (4, 1)
+        SPREAD_EARLY -> (3, 1)
             「早散会（ビーム受けたまま）」をエコー表示 + 頭上1マーク
         SPREAD_LATE -> (4, 2)
             「遅散会（東西）」をエコー表示 + 頭上2マーク
@@ -1109,7 +1109,7 @@ class SimulatorBase(ShowBase):
         result = self.derived["water_light_result"]
 
         if result == "SPREAD_EARLY":
-            self.execute_macro(4, 1)
+            self.execute_macro(3, 1)
         elif result == "SPREAD_LATE":
             self.execute_macro(4, 2)
 
@@ -3192,10 +3192,10 @@ class SimulatorBase(ShowBase):
                 "marker": "1",
             },
             (3, 2): {
-                "file": "attack2.png",
+                "file": "attack1.png",
                 "target": "echo",
-                "message": "遅散会（東西）",
-                "marker": "2",
+                "message": "早散会（ビーム受けたまま）",
+                "marker": "1",
             },
             (3, 4): {
                 "file": "facepalm.png",
@@ -3209,10 +3209,10 @@ class SimulatorBase(ShowBase):
             },
 
             (4, 1): {
-                "file": "attack1.png",
+                "file": "attack2.png",
                 "target": "echo",
-                "message": "早散会（ビーム受けたまま）",
-                "marker": "1",
+                "message": "遅散会（東西）",
+                "marker": "2",
             },
             (4, 2): {
                 "file": "attack2.png",
