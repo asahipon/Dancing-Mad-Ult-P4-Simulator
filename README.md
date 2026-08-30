@@ -8,12 +8,9 @@
 - [マクロスライド](https://docs.google.com/presentation/d/13sjWPxBr045OW5BimoZ-_A4v09Y4sbB55Y8tsz_P3C4/edit?usp=sharing)
 - [コール、役割分担表](https://docs.google.com/spreadsheets/d/1IWxfFcFAbkx_LCHglqFvIA01GUntmq5s8utwo52qTug/edit?usp=sharing)
 
-## ダウンロード
-
-- **キーボード＋マウスver：** DL
-- **パッドver：** DL
-
-> ※ダウンロードリンクはRelease作成後に追加予定
+## 👇**ダウンロード**
+**キーボード＋マウスver：[DL](https://github.com/asahipon/Dancing-Mad-Ult-P4-Simulator/releases/download/v0_beta/DMU_P4_sim_v0_beta.zip)**<br>
+**パッドver：[DL](https://github.com/asahipon/Dancing-Mad-Ult-P4-Simulator/releases/download/v0_beta/DMU_P4_sim_pad_v0_beta.zip)**<br>
 
 
 ## 操作方法
